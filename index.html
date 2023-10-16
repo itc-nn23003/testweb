@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>テキストの装飾</title>
+<!-- 外部ファイルのch07-style.cssを読み込む -->
+<link rel="stylesheet" type="text/css" href="ch07-style.css">
+
+<!-- Webフォントを読み込む -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1 class="main-style">テキストの装飾</h1>
+
+<hr>
+
+<h2 class="main-style">文字サイズ</h2>
+
+<h3 class="main-style">em単位でフォントサイズを指定する：要素が入れ子になっている</h3>
+<!-- P54 chapter4/c04-01-a/index.html -->
+<section id="ch07-1-a">
+bodyのフォントサイズ（1em = 16px）
+<div>
+        body→divのフォントサイズ（16pxを継承したフォントサイズの0.8em = 約13px）
+        <div>
+                body→div→divのフォントサイズ（13pxを継承したフォントサイズの0.8em = 約10px）
+        </div>
+</div>
+</section>
+</html>
